@@ -7,6 +7,14 @@ hamburger.addEventListener('click', function() {
     menu.classList.toggle('container__nav-menu_active');
 })
 
+gsap.to('#par', {
+    text: "GRANTIT is an international information technology sales company.",
+    duration: 9,
+    delay: 3,
+    repeat: -1,
+    repeatDelay: 1,
+    ease: "power1.in",
+});
 
 function show_list() {
     let services = document.getElementById("services_id");

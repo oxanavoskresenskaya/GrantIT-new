@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Software supply</title>
+</head>
+<body>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <header>
+        <div>
+            <img src="img/logo.png" class="logo" alt="logo">
+        </div>
+        <nav class="container__nav-menu">
+            <ul class="container-menu">
+                <li class="list-menu"><a href="index.html" class="arrow">Home</a></li>
+                <li class="list-menu"><a href="index.html" class="arrow">About</a></li>
+                <li class="list-menu dropdown_list" onclick="show_list()">Services</li>
+                <li class="list-menu">Contacts</li>
+            </ul>
+            <div id="services_id" class="services">
+                <li><a href="consulting.html" target="_blank">Consulting</a></li>
+                <li><a href="integration.html" target="_blank">Integration</a></li>
+                <li><a href="training.html" target="_blank">Training</a></li>
+                <li><a href="support.html" target="_blank">Technical support</a></li>
+            </div>
+        </nav>
+        <div>
+            <img src="img/globe.png" alt="language" class="language_list" onclick="show_language()">
+        </div>
+        <div id="language_id" class="language">
+            <li><a href="">English</a></li>
+            <li><a href="">Turkish</a></li>
+            <li><a href="">Russian</a></li>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="header">Software supply</h1>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
