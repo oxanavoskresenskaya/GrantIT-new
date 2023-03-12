@@ -316,6 +316,16 @@ footer {
     z-index: -2;
 }
 .header-section-one {
+    position: absolute;
+    left: 40%;
+    color: #ed1c24;
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+}
+.header-news {
     color: #ed1c24;
     font-family: Inter;
     font-size: 50px;
