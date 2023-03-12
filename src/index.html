@@ -22,9 +22,11 @@
         </div>
         <nav class="container__nav-menu">
             <ul class="container-menu">
-                <li class="list-menu">About</li>
+                <a href="#about-me" class="list-menu"><li>About</li></a>
                 <li class="list-menu dropdown_list" onclick="show_list()">Services</li>
-                <li class="list-menu">Contacts</li>
+                <a href="#news" class="list-menu"><li>News and events</li></a>
+                <a href="#vendors" class="list-menu"><li>Vendors</li></a>
+                <a href="#contacts" class="list-menu"><li>Contacts</li></a>
             </ul>
             <div id="services_id" class="services">
                 <li><a href="software_supply.html" target="_blank">Software supply</a></li>
@@ -53,37 +55,51 @@
         </section>
         <section class="container-about_me">
                 <img src="img/img-block-about_me.jpg" alt="me" class="img-block-about_me">
-                <p class="discription_me">I'm Natalia Elashko, I have been in IT business for over 19 years. During this time I had the opportunity to work with such world leaders in IT as Microsoft, IBM, HCL, Oracle, SAP, HP and Lenovo. In 2022, she moved to Turkey and started developing her IT business under the GRANTIT brand in Istanbul. I am engaged in sales and implementation of IT solutions, as well as providing consulting services in the field of IT. In addition, I am also actively involved in marketing campaigns and programs to promote new technologies and products. I have rich experience in the field of IT and strive to constantly develop in this area. My goal is to provide quality and reliable technological solutions to our clients. <br>
+                <p class="discription_me"><a name="about-me"></a>I'm Natalia Elashko, I have been in IT business for over 19 years. During this time I had the opportunity to work with such world leaders in IT as Microsoft, IBM, HCL, Oracle, SAP, HP and Lenovo. In 2022, she moved to Turkey and started developing her IT business under the GRANTIT brand in Istanbul. I am engaged in sales and implementation of IT solutions, as well as providing consulting services in the field of IT. In addition, I am also actively involved in marketing campaigns and programs to promote new technologies and products. I have rich experience in the field of IT and strive to constantly develop in this area. My goal is to provide quality and reliable technological solutions to our clients. <br>
                 Interaction with such vendors as Microsoft, IBM, HCL, Oracle, SAP, HP, Lenovo only strengthened my knowledge and experience in team management and client work practices.
                 For 5 years I have experience in promoting startups in America, Europe and the CIS countries.</p>
+        </section>
+        <section class="container-news-event">
+            <h2 class="header-section-one"><a name="news"></a>News and events</h2>
+            <div class="news">
+                <div class="block-one">
+                    <img src="img/img-microsoft.jpg" alt="foto" class="img-block-one" id="microsoft">
+                </div>
+                <div class="block-one">
+                    <img src="img/img-ibm.jpg" alt="foto" class="img-block-one" id="ibm">
+                </div>
+                <div class="block-one">
+                    <img src="img/img-oracle.jpg" alt="foto" class="img-block-one" id="oracle">
+                </div>
+            </div>
+
+
+        </section>
+        <section class="container-vendors">
+            <img src="img/img-block-vendors.jpg" alt="image" class="img-block-vendors">
+            <h2 class="header-two pos"><a name="vendors"></a>Vendors:</h2>
+            <ul class="vendors">
+                <li><a href="https://www.microsoft.com/tr-tr/" target="_blank" class="vendors-list">Microsoft</a></li>
+                <li><a href="https://www.ibm.com/us-en/" target="_blank" class="vendors-list">IBM</a></li>
+                <li><a href="https://www.hcltechsw.com/" target="_blank" class="vendors-list">HCL</a></li> 
+                <li><a href="https://www.oracle.com/" target="_blank" class="vendors-list">Oracle</a></li>
+                <li><a href="https://www.sap.com/turkey/products/erp.html" target="_blank" class="vendors-list">SAP</a></li>
+                <li><a href="https://www.hp.com/tr-tr/home.html" target="_blank" class="vendors-list">HP</a></li>
+                <li><a href="https://www.think-cell.com/ru/product/benefits/" target="_blank" class="vendors-list">Think Cell</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
-        <div class="footer-container">
-            <div class="list-container">
-                <h2 class="footer-header-one">Vendors:</h2>
-                <ul>
-                    <li><a href="https://www.microsoft.com/tr-tr/" target="_blank" class="vendors-list">Microsoft</a></li>
-                    <li><a href="https://www.ibm.com/us-en/" target="_blank" class="vendors-list">IBM</a></li>
-                    <li><a href="https://www.hcltechsw.com/" target="_blank" class="vendors-list">HCL</a></li> 
-                    <li><a href="https://www.oracle.com/" target="_blank" class="vendors-list">Oracle</a></li>
-                    <li><a href="https://www.sap.com/turkey/products/erp.html" target="_blank" class="vendors-list">SAP</a></li>
-                    <li><a href="https://www.hp.com/tr-tr/home.html" target="_blank" class="vendors-list">HP</a></li>
-                    <li><a href="https://www.think-cell.com/ru/product/benefits/" target="_blank" class="vendors-list">Think Cell</a></li>
-
-                </ul>
-            </div>
-            <div class="list-container">
-                <h2 class="footer-header-one">Contacts:</h2>
-                <ul>
-                    <li class="vendors-list arrow">Company name: GRANTIT</li>
-                    <li class="vendors-list arrow">Director: Natalia Elashko</li>
-                    <li class="vendors-list arrow">Mobile phone: +9 0(507) 021 50 77</a></li> 
-                    <li><a href="mailto:Natalia@grantit.com.tr" target="_blank" class="vendors-list">E-mail: Natalia@grantit.com.tr</a></li>
-                    <li><a href="mailto:Natalia.Grantovna26@gmail.com" target="_blank" class="vendors-list">E-mail: Natalia.Grantovna26@gmail.com</a></li>
-                </ul>
-            </div>
+        <div class="list-container">
+            <h2 class="header-two"><a name="contacts"></a>Contacts:</h2>
+            <ul>
+                <li class="contacts-list arrow">Company name: GRANTIT</li>
+                <li class="contacts-list arrow">Director: Natalia Elashko</li>
+                <li class="contacts-list arrow">Mobile phone: +9 0(507) 021 50 77</a></li> 
+                <li><a href="mailto:Natalia@grantit.com.tr" target="_blank" class="contacts-list">E-mail: Natalia@grantit.com.tr</a></li>
+                <li><a href="mailto:Natalia.Grantovna26@gmail.com" target="_blank" class="contacts-list">E-mail: Natalia.Grantovna26@gmail.com</a></li>
+            </ul>
         </div>
         <div class="footer-logo">
             <img src="img/logo-footer.png" class="logo">

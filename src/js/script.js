@@ -47,3 +47,21 @@ window.onclick = function (event) {
             .style.display = "none";
     }
 }  
+
+const blockOne = document.querySelector('#microsoft');
+
+blockOne.addEventListener ('click', function(){
+    window.open('https://www.microsoft.com/en-us/security/blog/2022/12/15/do-more-with-less-with-microsoft-security-3-strategies-to-get-you-started/', '_blank'); 
+});
+
+const blockTwo = document.querySelector('#ibm');
+
+blockTwo.addEventListener ('click', function(){
+    window.open('https://www.ibm.com/case-studies/search?lnk=flatitem', '_blank'); 
+});
+const blockThree = document.querySelector('#oracle');
+blockThree.addEventListener ('click', function(){
+    window.open('https://developer.oracle.com/community/events/devlive-level-up-march-2023.html?source=:ow:o:h:feb:::RC_WWMK221215P00004:DevLive_LevelUp_March2023_HomepageCarousel&intcmp=:ow:o:h:feb:::RC_WWMK221215P00004:DevLive_LevelUp_March2023_HomepageCarousel', '_blank'); 
+});
+
+

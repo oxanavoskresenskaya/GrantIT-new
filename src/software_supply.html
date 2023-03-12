@@ -20,11 +20,10 @@
         <nav class="container__nav-menu">
             <ul class="container-menu">
                 <li class="list-menu"><a href="index.html" class="arrow">Home</a></li>
-                <li class="list-menu"><a href="index.html" class="arrow">About</a></li>
                 <li class="list-menu dropdown_list" onclick="show_list()">Services</li>
-                <li class="list-menu">Contacts</li>
+                <a href="#contacts" class="list-menu"><li>Contacts</li></a>
             </ul>
-            <div id="services_id" class="services">
+            <div id="services_id" class="services-pages">
                 <li><a href="consulting.html" target="_blank">Consulting</a></li>
                 <li><a href="integration.html" target="_blank">Integration</a></li>
                 <li><a href="training.html" target="_blank">Training</a></li>
@@ -42,8 +41,58 @@
     </header>
 
     <main>
-        <h1 class="header">Software supply</h1>
+        <section class="container-section-one">
+                <h1 class="header-section-one">Software supply</h1>
+                <img src="img/software_supply/img-block-supply0.jpg" alt="image" class="img-block0">
+        </section>
+        <section class="container-section-two">
+            <img src="img//software_supply/img-block-supply1.jpg" alt="image" class="img-block1">
+            <div class="container-one">
+                <h2 class="header-two">Software delivery, installation and configuration</h2>
+                <p class="discription_me">Software delivery, installation and configuration is a set of actions required in order to download and configure the software on a computer. This includes checking the required system requirements, downloading software and updating drivers, verifying that the installation is correct, and that the configuration is correct.</p>
+            </div>
+        </section>
+        <div class="border"></div>
+        <section class="container-section-two">
+            <div class="container-one">
+                <h2 class="header-two">Software delivery and demonstration</h2>
+                <p class="discription_me">Delivery and demonstration of software (SW) includes installation and configuration of software for the customer.
+                    Includes the delivery and installation of the software on a customer's computer or portable device, as well as setting up the software and providing the user with information on how to use the software, as well as indications of available updates and patches.
+                    The software may be delivered as a separate shipment or as part of a system. Software configuration may include checking and updating the software configuration and adjusting security settings. During the demonstration of the software to the customer, we explain how to use the software and also answer questions about the product.
+                    We always request demo licenses from the software manufacturer in order to respect the vendor's copyrights.</p>
+            </div>
+            <img src="img//software_supply/img-block-supply2.jpg" alt="image" class="img-block1">
+        </section>
+        <div class="border"></div>
+        <section class="container-section-two">
+            <img src="img//software_supply/img-block-supply3.jpg" alt="image" class="img-block1">
+            <div class="container-one">
+                <h2 class="header-two">Internet services</h2>
+                <p class="discription_me">Online services related to the software include various types of services, such as:<br>
+                - software development and support,<br>
+                - promotion and sale of software,<br>
+                - hosting,<br>
+                - cloud storage.<br>
+                Such services help the customer produce and sell software more efficiently and support their products more efficiently. Internet-based software services allow you to create and develop products more quickly, as well as improve the usability of software.</p>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="list-container">
+            <h2 class="header-two"><a name="contacts"></a>Contacts:</h2>
+            <ul>
+                <li class="contacts-list arrow">Company name: GRANTIT</li>
+                <li class="contacts-list arrow">Director: Natalia Elashko</li>
+                <li class="contacts-list arrow">Mobile phone: +9 0(507) 021 50 77</a></li> 
+                <li><a href="mailto:Natalia@grantit.com.tr" target="_blank" class="contacts-list">E-mail: Natalia@grantit.com.tr</a></li>
+                <li><a href="mailto:Natalia.Grantovna26@gmail.com" target="_blank" class="contacts-list">E-mail: Natalia.Grantovna26@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-logo">
+            <img src="img/logo-footer.png" class="logo">
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/TextPlugin.min.js"></script>
