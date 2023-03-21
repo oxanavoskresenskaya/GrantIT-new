@@ -389,11 +389,34 @@ footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.show {display: block;}
+
+@media all and (max-width: 1600px) {
+    .container-menu {
+        margin-right: 0px;
+    }
+        .logo {
+            width: 230px;
+            margin-top: 20px;
+        }
+        .discription_me {
+            font-size: 15px;
+            line-height: 20px;
+        }
+        .discription {
+            font-size: 15px;
+            line-height: 20px;
+            margin-top: 25px;
+        }
+        .block-fon2 {
+            left: 0;
+            right: 0;
+        }
+    }
+
 @media all and (max-width: 1000px) {
     .hamburger {
         position: fixed;
-        top: 40px;
+        top: 30px;
         right: 30px;
         width: 50px;
         height: 35px;
@@ -443,7 +466,7 @@ footer {
         right: 0px;
     }
     .language_list {
-        margin-top: 40px;
+        margin-top: 35px;
         margin-right: 200px;  
     }
     .language {
@@ -523,6 +546,7 @@ footer {
 @media all and (max-width: 600px) {
     .logo {
         width: 250px;
+        margin-top: 0px;
     }
     main {
         margin-top: 80px;
@@ -683,7 +707,7 @@ footer {
 }
 @media all and (max-width: 300px) {
     header {
-height: 60px;
+        height: 60px;
     }
     .logo {
         width: 190px;
@@ -692,10 +716,13 @@ height: 60px;
     .hamburger {
         top: 15px;
         right: 10px;
-    }
+        width: 45px;
+        }
     .language_list {
         margin-top: 20px;
-        margin-right: 65px;  
+        margin-right: 65px;
+        width: 22px; 
+        height: 22px; 
     }
     .img-block-about_me {
         width: 200px;
