@@ -8,40 +8,48 @@ hamburger.addEventListener('click', function() {
 });
 
 
-function show_list() {
-    let services = document.getElementById("services_id");
 
-    window.onclick = function (event) {
-        if (!event.target.matches('.dropdown_list')) {
-            document.getElementById('services_id')
-                .style.display = "none";
-        }
-    };
-    if (services.style.display == "none") {
-        services.style.display = "block";
-    } else {
-        services.style.display = "none";
-    }
+const services = document.querySelector('#services_id');
+const list = document.querySelector('.dropdown_list');
+
+function showList() {
+    services.style.display = 'block';
 }
 
-
-function show_language() {
-    let language = document.getElementById("language_id");
-
-    window.onclick = function (event) {
-        if (!event.target.matches('.language_list')) {
-            document.getElementById('language_id')
-                .style.display = "none";
-        }
-    }; 
-
-    if (language.style.display == "none") {
-        language.style.display = "block";
-    } else {
-        language.style.display = "none";
-    }
+function hideList() {
+    services.style.display = 'none';
 }
- 
+
+window.addEventListener('click', (e) => {
+    const target = e.target;
+
+    if ((target && target !== list) || services.style.display == 'block') {
+    hideList();
+    } else {
+    showList();
+    }
+});
+
+const language = document.querySelector('#language_id');
+const languageList = document.querySelector('.language_list');
+
+function showLanguage() {
+    language.style.display = 'block';
+}
+
+function hideLanguage() {
+    language.style.display = 'none';
+}
+
+window.addEventListener('click', (e) => {
+    const target = e.target;
+
+    if ((target && target !== languageList) || language.style.display == 'block') {
+    hideLanguage();
+    } else {
+    showLanguage();
+    }
+});
 
 const vendorsMicrosoft = document.querySelector('#microsoft');
 vendorsMicrosoft.addEventListener ('click', function(){

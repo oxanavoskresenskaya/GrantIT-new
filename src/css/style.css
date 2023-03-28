@@ -59,8 +59,8 @@ padding: 0;
 
 .block-fon2 {
     position: absolute;
-    left: 2%;
-    right: 1%;
+    left: 0%;
+    right: 0%;
 }
 .img-block-fon {
     width: 100%;
@@ -144,7 +144,6 @@ footer {
     top: 40%;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 .pos {
     position: absolute;
@@ -165,7 +164,7 @@ footer {
     line-height: 30px;
     letter-spacing: 0em;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
 }
 .vendors-list:hover {
     cursor: pointer;
@@ -407,13 +406,34 @@ footer {
             line-height: 20px;
             margin-top: 25px;
         }
+    .discription_text {
+        font-size: 15px;
+        line-height: 20px;
+    }
         .block-fon2 {
             left: 0;
             right: 0;
         }
+    .header-two {
+        font-size: 25px;
+    }
+    .vendors {
+        flex-direction: column;
+        align-items: center;
+        top: 20%;
+        margin: 0;
+    }
+    .vendors-list {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+    }
+    .img-block-vendors {
+        height: 310px;
+    }
     }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1050px) {
     .hamburger {
         position: fixed;
         top: 30px;
@@ -464,6 +484,12 @@ footer {
 
     .container__nav-menu_active {
         right: 0px;
+    }
+    .logo {
+        width: 320px;
+    }
+    .footer-logo {
+        padding-bottom: 120px;
     }
     .language_list {
         margin-top: 35px;
@@ -531,7 +557,7 @@ footer {
         top: 20%;
     }
     .vendors-list {
-        padding: 100px;
+        padding: 0px;
         font-size: 25px;
     }
     .header {
@@ -547,6 +573,9 @@ footer {
     .logo {
         width: 250px;
         margin-top: 0px;
+    }
+    .footer-logo {
+        padding-bottom: 10px;
     }
     main {
         margin-top: 80px;
@@ -603,7 +632,7 @@ footer {
         left: 30%;
     }
     .vendors-list {
-        padding: 60px;
+        padding: 5px;
         font-size: 20px;
     }
     .img-block-about_me {
@@ -628,13 +657,20 @@ footer {
     line-height: 20px;
     top: 180px;
     left: 30px;
-
+}
+.discription_me {
+    font-size: 12px;
+    line-height: 20px;
+    width: 90%;
 }
 }
 
 @media all and (max-width: 500px) {
 .logo {
     width: 300px;
+}
+.footer-logo {
+    padding-bottom: 10px;
 }
 .hamburger {
     top: 20px;
@@ -663,7 +699,7 @@ footer {
     font-size: 15px;
 }
 .discription_me {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 20px;
 }
 .discription_text {
@@ -678,6 +714,9 @@ footer {
 @media all and (max-width: 400px) {
     .logo {
         width: 250px;
+    }
+    .footer-logo {
+        padding-bottom: 10px;
     }
     .hamburger {
         top: 15px;
@@ -713,6 +752,9 @@ footer {
         width: 190px;
         margin-top: 10px;
     }
+    .footer-logo {
+        padding-bottom: 10px;
+    }
     .hamburger {
         top: 15px;
         right: 10px;
@@ -741,7 +783,6 @@ footer {
         margin: 0 auto;
     }
     .vendors-list {
-        padding: 30px;
         font-size: 15px;
     }
     .header-two {
